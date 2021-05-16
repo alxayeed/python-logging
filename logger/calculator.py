@@ -1,7 +1,8 @@
 import logging
 
 # logger configuration
-logging.basicConfig(filename='logfile.log' ,level=logging.DEBUG)
+logging.basicConfig(filename='logfile.log' ,level=logging.DEBUG,
+    format='%(filename)s:%(lineno)d:%(message)s')
 
 
 def add(x, y):
@@ -23,7 +24,7 @@ def division(x, y):
     try:
         return x / y
     except ZeroDivisionError as e:
-        logging.error(f'dividing {x} by {y}')
+        logging.error(e)
 
 
 # result = add(10, 5)

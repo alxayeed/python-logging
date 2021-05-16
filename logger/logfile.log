@@ -1,2 +1,5 @@
 DEBUG:root:dividing 21 by 0
 ERROR:root:dividing 21 by 0
+ERROR:root:division by zero
+calculator.py:27:division by zero
+calculator.py:27:division by zero
