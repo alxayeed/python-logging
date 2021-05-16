@@ -1,2 +1,2 @@
-DEBUG:root:adding 10 and 5
-DEBUG:root:subtracting 7 from 20
+DEBUG:root:dividing 21 by 0
+ERROR:root:dividing 21 by 0

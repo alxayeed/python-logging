@@ -18,7 +18,14 @@ def multiply(x, y):
     """multiplication of 2 numbers"""
     return x * y
 
+def division(x, y):
+    """divide a number with another"""
+    try:
+        return x / y
+    except ZeroDivisionError as e:
+        logging.error(f'dividing {x} by {y}')
 
-result = add(10, 5)
-print(result)
-print(substract(20, 7))
+
+# result = add(10, 5)
+# print(result)
+print(division(21, 0))
