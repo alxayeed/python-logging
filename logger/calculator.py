@@ -1,7 +1,7 @@
 import logging
 
 # logger configuration
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(filename='logfile.log' ,level=logging.DEBUG)
 
 
 def add(x, y):
