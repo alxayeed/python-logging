@@ -1,18 +1,27 @@
 import logging
 
+"""
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+"""
+
+
 # logger configuration
-logging.basicConfig(filename='logfile.log' ,level=logging.DEBUG,
-    format='%(filename)s:%(lineno)d:%(message)s')
+logging.basicConfig(filename='logfile.log', level=logging.DEBUG,
+    format='%(asctime)s - line %(lineno)d in %(filename)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 
 def add(x, y):
     """adds 2 numbers"""
-    logging.debug(f'adding {x} and {y}')
+    logging.info(f'adding {x} and {y}')
     return x + y
 
 def substract(x, y):
     """substraction between 2 numbers"""
-    logging.debug(f'subtracting {y} from {x}')
+    logging.info(f'subtracting {y} from {x}')
     return x - y
 
 def multiply(x, y):
@@ -24,9 +33,9 @@ def division(x, y):
     try:
         return x / y
     except ZeroDivisionError as e:
-        logging.error(e)
+        logging.exception(e)
 
 
-# result = add(10, 5)
-# print(result)
+result = add(10, 5)
+print(result)
 print(division(21, 0))

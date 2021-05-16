@@ -3,3 +3,30 @@ ERROR:root:dividing 21 by 0
 ERROR:root:division by zero
 calculator.py:27:division by zero
 calculator.py:27:division by zero
+calculator.py:27:division by zero
+Traceback (most recent call last):
+  File "calculator.py", line 25, in division
+    return x / y
+ZeroDivisionError: division by zero
+calculator.py:27:division by zero
+Traceback (most recent call last):
+  File "calculator.py", line 25, in division
+    return x / y
+ZeroDivisionError: division by zero
+2021-05-16 16:15:35,648:calculator.py:27:division by zero
+Traceback (most recent call last):
+  File "calculator.py", line 25, in division
+    return x / y
+ZeroDivisionError: division by zero
+2021-05-16 16:17:33,380:calculator.py:19:adding 10 and 5
+2021-05-16 16:17:33,381:calculator.py:36:division by zero
+Traceback (most recent call last):
+  File "calculator.py", line 34, in division
+    return x / y
+ZeroDivisionError: division by zero
+16-May-21 16:24:16 - line 19 in calculator.py - adding 10 and 5
+16-May-21 16:24:16 - line 36 in calculator.py - division by zero
+Traceback (most recent call last):
+  File "calculator.py", line 34, in division
+    return x / y
+ZeroDivisionError: division by zero
