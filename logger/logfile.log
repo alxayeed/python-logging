@@ -30,3 +30,4 @@ Traceback (most recent call last):
   File "calculator.py", line 34, in division
     return x / y
 ZeroDivisionError: division by zero
+2021-05-17 11:44:10,396 - line 29 in calculator.py - adding 10 and 5
